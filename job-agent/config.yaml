@@ -1,0 +1,44 @@
+profile:
+  name: "[Your Full Name]"
+  email: "[your@email.com]"
+  phone: "[your phone]"
+  location: "Los Angeles, CA"
+  linkedin_url: ""
+  github_url: ""
+  portfolio_url: ""
+
+job_preferences:
+  domains:
+    - "artificial intelligence"
+    - "machine learning"
+    - "quantitative finance"
+    - "algorithmic trading"
+    - "real estate finance"
+    - "REPE"
+    - "PropTech"
+    - "data science"
+    - "math tutoring"
+    - "physics tutoring"
+    - "programming tutoring"
+  job_types:
+    - "full-time"
+    - "part-time"
+    - "contract"
+    - "freelance"
+    - "remote"
+  remote_preference: "hybrid_or_remote"
+  salary_min_usd: 80000
+  experience_level: ["mid", "senior"]
+  blacklist_companies: []
+  max_applications_per_day: 25
+  application_hours: "09:00-18:00"
+
+keywords:
+  ai_ml: ["LLM", "RAG", "transformer", "PyTorch", "MLOps", "prompt engineering",
+           "reinforcement learning", "computer vision", "NLP", "Anthropic", "OpenAI"]
+  quant: ["quantitative researcher", "algo trading", "derivatives", "stochastic",
+          "C++", "Python quant", "risk model", "factor model", "HFT", "fixed income"]
+  real_estate: ["REPE", "real estate private equity", "REIT", "underwriting",
+                "Argus", "cap rate", "debt fund", "CRE", "PropTech", "asset management"]
+  tutoring: ["math tutor", "calculus", "statistics", "machine learning tutor",
+             "Python tutor", "SAT", "GRE", "online tutor", "1-on-1"]
