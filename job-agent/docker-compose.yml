@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  job-agent:
+    build: .
+    restart: always
+    env_file: .env
+    volumes:
+      - ./data/db:/app/db_data        # SQLite persistence
+      - ./logs:/app/logs              # run logs & daily digests
+      - ./outbox:/app/outbox          # email drafts awaiting human review
+      - ./profile:/app/profile        # resume + variants (read/write)
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+
+  dashboard:
+    build: .
+    command:
+      - streamlit
+      - run
+      - dashboard/app.py
+      - --server.port=8501
+      - --server.address=0.0.0.0
+      - --server.headless=true
+    restart: always
+    ports:
+      - "8501:8501"
+    env_file: .env
+    volumes:
+      - ./data/db:/app/db_data
+      - ./logs:/app/logs
+    depends_on:
+      - job-agent
