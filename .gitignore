@@ -1,0 +1,27 @@
+# Claude Code worktrees (local scaffolding only)
+.claude/worktrees/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.env
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Job agent runtime data
+job-agent/db/*.db
+job-agent/logs/
+job-agent/outbox/
+job-agent/profile/variants/
+job-agent/data/
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db

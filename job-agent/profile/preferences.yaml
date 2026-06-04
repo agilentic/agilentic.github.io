@@ -1,0 +1,10 @@
+salary_min_usd: 80000
+remote_preference: hybrid_or_remote   # remote | hybrid_or_remote | any
+willing_to_relocate: false
+preferred_cities:
+  - "Los Angeles, CA"
+  - "Remote"
+notice_period_weeks: 2
+availability: immediate
+visa_sponsorship_required: false
+work_authorization: "US citizen or permanent resident"
