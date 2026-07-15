@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MathMaster — AI-powered GCSE mathematics learning and practice." />
+    <title>MathMaster | The Future of GCSE</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+    <style>
+      :root {
+        --apple-bg: #f5f5f7;
+        --apple-text: #1d1d1f;
+        --apple-blue: #0071e3;
+        --glass: rgba(255, 255, 255, 0.7);
+      }
+      body {
+        margin: 0;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: var(--apple-bg);
+        color: var(--apple-text);
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+      }
+      .glass {
+        background: var(--glass);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+      }
+      .apple-shadow {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      }
+      .apple-card {
+        background: #fff;
+        border-radius: 20px;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .apple-card:hover { transform: scale(1.01); }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+      .katex { font-size: 1.1em; }
+      .stripe-input {
+        background: #f9f9fb;
+        border: 1px solid #e6e6e6;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #32325d;
+      }
+      .stripe-input:focus {
+        border-color: #0071e3;
+        outline: none;
+        box-shadow: 0 0 0 1px #0071e3;
+      }
+    </style>
+
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/agilentic/DeltaX@gh-pages/assets/index-tn0RQdqM.css" />
+    <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/agilentic/DeltaX@gh-pages/assets/index-Dd2baRKh.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This application requires JavaScript to run.</noscript>
+  </body>
+</html>
